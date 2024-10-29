@@ -1,8 +1,17 @@
 name: movile_app_template
-description: Un template básico para una aplicación móvil.
-version: 0.0.1
+description: A template for a mobile app in Flutter.
+version: 1.0.0+1
+
 environment:
-  sdk: ">=2.10.0 <3.0.0"
+  sdk: ">=2.12.0 <3.0.0"
+
 dependencies:
   flutter:
     sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true

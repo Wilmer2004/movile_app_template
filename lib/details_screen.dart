@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
 class DetailsScreen extends StatelessWidget {
+  final String item;
+
+  DetailsScreen({required this.item});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -8,7 +12,10 @@ class DetailsScreen extends StatelessWidget {
         title: Text('Details Screen'),
       ),
       body: Center(
-        child: Text('This is the details screen.'),
+        child: Text(
+          'Details of $item',
+          style: TextStyle(fontSize: 24),
+        ),
       ),
     );
   }

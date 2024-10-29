@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'home_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -8,15 +9,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Movile App',
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Movile App Home'),
-        ),
-        body: Center(
-          child: Text('Bienvenido a Movile App!'),
-        ),
+      title: 'Movile App Template',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
       ),
+      home: HomeScreen(),
     );
   }
 }
